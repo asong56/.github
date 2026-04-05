@@ -1,0 +1,39 @@
+title: "[Q&A]: "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? Ask it here. Before posting, please:
+        - Search existing Q&A discussions
+        - Check the README and any documentation in `docs/`
+
+        If you have found a **bug**, open an [Issue](../../issues/new/choose) instead.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      placeholder: Ask clearly and include any relevant context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you already tried?
+      description: This helps avoid answers that repeat what you have already done.
+      placeholder: "e.g. I checked the README, tried X, searched for Y..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (if relevant)
+      placeholder: |
+        - OS:
+        - Browser / Runtime:
+        - Project version:
+    validations:
+      required: false
