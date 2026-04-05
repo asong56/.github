@@ -1,0 +1,45 @@
+title: "[Idea]: "
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas and early-stage proposals belong here — before they become a formal feature request.
+        The bar is low: rough thinking is fine. The goal is to explore whether something is worth pursuing.
+
+        If your idea is already well-formed, you can go straight to a [Feature Request issue](../../issues/new/choose).
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem or friction prompted this idea?
+      placeholder: "Describe the situation, task, or frustration that led you here."
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      placeholder: "Describe what you're imagining. Rough is fine."
+    validations:
+      required: true
+
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Potential tradeoffs or concerns
+      description: What might break, get more complex, or conflict with the project's philosophy?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: certainty
+    attributes:
+      label: How confident are you that this fits the project?
+      options:
+        - Very confident — I've read the docs and it aligns well
+        - Somewhat confident — I think it fits but I'm not sure
+        - Not sure — I'd like feedback before going further
+    validations:
+      required: true
