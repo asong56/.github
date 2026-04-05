@@ -1,0 +1,16 @@
+title: "[Announcement]: "
+labels: [announcement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This category is for official project announcements from maintainers.
+        Replies are open — feel free to ask follow-up questions.
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Announcement
+      description: What would you like to share?
+    validations:
+      required: true
