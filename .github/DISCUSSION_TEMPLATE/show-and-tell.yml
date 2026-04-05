@@ -1,0 +1,32 @@
+title: "[Show & Tell]: "
+labels: [show-and-tell]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Built something with or for this project? Share it here.
+        This is an open space — polished or rough, it's all welcome.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you build?
+      placeholder: "Describe what you made and what it does."
+    validations:
+      required: true
+
+  - type: textarea
+    id: link
+    attributes:
+      label: Link or demo
+      placeholder: "URL, repo, screenshot, video — anything that shows it off."
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes, caveats, or lessons learned
+      placeholder: "Anything you'd do differently, or that others might find useful."
+    validations:
+      required: false
