@@ -1,1 +1,49 @@
+name: No Response
 
+on:
+  schedule:
+    - cron: '0 8 * * *' # Runs daily at 08:00 UTC
+  workflow_dispatch:   # allow manual runs from the Actions tab
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  no-response:
+    name: Close stalled issues
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close issues awaiting response
+        uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # ── Issues ──────────────────────────────────────────────
+          # Mark stale after 14 days with the `needs-info` label
+          days-before-issue-stale: 14
+          stale-issue-label: 'stale'
+          only-labels: 'needs-info'
+          stale-issue-message: >
+            This issue has been waiting for more information for 14 days
+            and has been marked as stale. It will be closed in 7 days if
+            there is no response. If you have more information to add,
+            please comment and the label will be removed.
+
+          # Close 7 days after going stale
+          days-before-issue-close: 30
+          close-issue-message: >
+            Closing this issue due to inactivity. If you have more
+            information or the issue is still relevant, please open a
+            new issue and reference this one.
+          close-issue-label: 'closed: no response'
+
+          # ── Pull Requests ────────────────────────────────────────
+          # Do not mark PRs as stale automatically — handle those manually
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+
+          # ── General ──────────────────────────────────────────────
+          exempt-issue-labels: 'pinned,security,in progress'
+          remove-stale-when-updated: true
+          debug-only: false
