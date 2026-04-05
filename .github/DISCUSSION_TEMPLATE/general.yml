@@ -1,0 +1,19 @@
+title: ""
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the general discussion space — for anything that doesn't fit another category.
+
+        Before posting:
+        - **Bug?** → [Open an Issue](../../issues/new/choose)
+        - **Question?** → [Q&A](../../discussions/new?category=q-a)
+        - **Feature idea?** → [Ideas](../../discussions/new?category=ideas)
+
+  - type: textarea
+    id: content
+    attributes:
+      label: What's on your mind?
+    validations:
+      required: true
