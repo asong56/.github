@@ -36,6 +36,13 @@ This Code of Conduct applies to all project spaces — GitHub issues, pull reque
 
 ---
 
+## Reporting
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainers via our [Community Code of Conduct Report Form](https://forms.gle/i5s6y9i145vsT8a49). 
+
+You may submit reports completely anonymously. However, if you wish to be updated on the progress of your report or are willing to provide more details, please leave an optional contact method (Email or GitHub ID) in the form. All complaints will be reviewed and investigated promptly and fairly, and we will maintain strict confidentiality.
+
+---
+
 ## Enforcement
 
 Instances of unacceptable behavior may be reported by opening a GitHub issue or contacting the maintainer directly via GitHub. All reports will be reviewed and investigated promptly and fairly. The maintainer is obligated to maintain confidentiality with regard to the reporter.
