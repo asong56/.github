@@ -1,1 +1,64 @@
+# -------------------------------------------------------------------
+# Line endings
+# Normalize all text files to LF on commit.
+# Windows users will get CRLF on checkout via core.autocrlf.
+# -------------------------------------------------------------------
+* text=auto eol=lf
 
+# Explicitly declare text files
+*.md        text eol=lf
+*.txt       text eol=lf
+*.html      text eol=lf
+*.css       text eol=lf
+*.scss      text eol=lf
+*.js        text eol=lf
+*.ts        text eol=lf
+*.jsx       text eol=lf
+*.tsx       text eol=lf
+*.json      text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.toml      text eol=lf
+*.ini       text eol=lf
+*.sh        text eol=lf
+*.py        text eol=lf
+*.rs        text eol=lf
+*.sql       text eol=lf
+*.csv       text eol=lf
+
+# Binary files — do not apply line-ending conversion
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.svg  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.eot  binary
+*.pdf  binary
+*.zip  binary
+*.gz   binary
+
+# -------------------------------------------------------------------
+# Diff drivers
+# Improve readability of diffs for common formats
+# -------------------------------------------------------------------
+*.md   diff=markdown
+*.rs   diff=rust
+*.py   diff=python
+
+# -------------------------------------------------------------------
+# Linguist overrides
+# Prevent vendored or generated files from skewing repo language stats
+# -------------------------------------------------------------------
+dist/**         linguist-generated=true
+build/**        linguist-generated=true
+*.min.js        linguist-generated=true
+*.min.css       linguist-generated=true
+vendor/**       linguist-vendored=true
+docs/**         linguist-documentation=true
+*.md            linguist-documentation=true
