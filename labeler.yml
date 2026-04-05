@@ -1,1 +1,86 @@
+# Label mapping for actions/labeler.
+# Docs: https://github.com/actions/labeler
+#
+# Each key is a label name. Each value is one or more glob patterns.
+# A PR is labelled when any changed file matches a pattern.
 
+# ── Type ────────────────────────────────────────────────────────────
+
+bug:
+  - any: ['**']
+
+documentation:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.md'
+      - 'docs/**'
+      - '.github/**/*.md'
+      - 'README*'
+      - 'CHANGELOG*'
+
+# ── Area ────────────────────────────────────────────────────────────
+
+frontend:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.html'
+      - '**/*.css'
+      - '**/*.scss'
+      - '**/*.jsx'
+      - '**/*.tsx'
+
+javascript:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.js'
+      - '**/*.ts'
+      - '**/*.mjs'
+      - '**/*.cjs'
+
+python:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.py'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - 'setup.py'
+      - 'setup.cfg'
+
+rust:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.rs'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
+
+# ── Infrastructure ──────────────────────────────────────────────────
+
+ci:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**'
+      - '.github/**/*.yml'
+      - '.github/**/*.yaml'
+
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'package.json'
+      - 'package-lock.json'
+      - 'yarn.lock'
+      - 'pnpm-lock.yaml'
+      - 'requirements*.txt'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
+      - 'pyproject.toml'
+
+config:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.eslintrc*'
+      - '.prettierrc*'
+      - '.gitattributes'
+      - 'vale.ini'
+      - 'tsconfig*.json'
+      - 'vite.config.*'
+      - 'tailwind.config.*'
