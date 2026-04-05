@@ -1,0 +1,57 @@
+name: Documentation Issue
+description: Something in the docs is missing, wrong, or unclear.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Documentation issues are always welcome — clear docs help everyone.
+        If you already know the fix, a pull request is even better than an issue.
+
+  - type: input
+    id: location
+    attributes:
+      label: Where is the problem?
+      description: Link to the page, section, or file with the issue.
+      placeholder: "e.g. README.md §Setup, https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of issue
+      options:
+        - Incorrect or outdated information
+        - Missing information
+        - Unclear or confusing explanation
+        - Broken link
+        - Typo or formatting issue
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: What does it currently say or show?
+      description: Quote or describe the problematic content.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it say or show?
+      description: Describe the correct or improved content, if you know it.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else that might help.
+    validations:
+      required: false
