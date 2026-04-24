@@ -1,0 +1,41 @@
+name: No Response
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  no-response:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          days-before-issue-stale: 14
+          stale-issue-label: 'stale'
+          only-labels: 'needs-info'
+          stale-issue-message: >
+            This issue has been waiting for more information for 14 days
+            and has been marked as stale. It will be closed in 7 days if
+            there is no response. If you have more information to add,
+            please comment and the label will be removed.
+          days-before-issue-close: 30
+          close-issue-message: >
+            Closing this issue due to inactivity. If you have more
+            information or the issue is still relevant, please open a
+            new issue and reference this one.
+          close-issue-label: 'closed: no response'
+
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+
+          exempt-issue-labels: 'pinned,security,in progress'
+          remove-stale-when-updated: true
+          debug-only: false
