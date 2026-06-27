@@ -17,7 +17,7 @@
         <li><b>SQLite</b>, MySQL, Postgres</li>
         <li><b>HTML</b>, CSS, SCSS, Flask</li>
         <li>Git</li>
-        <li>Still Learning: Go, Rust, Java, <i>JavaScript (I Hate it !)</i></li>
+        <li>Still Learning: Go, Rust, Java, <del><i>JavaScript (I Hate it !)</i></del></li>
     </ul>
 </details>
 
