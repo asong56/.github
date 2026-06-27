@@ -12,11 +12,13 @@
 
 <details>
 <summary>TECH STACK</summary>
-    - **Python**, C
-    - **SQLite**, MySQL, Postgres
-    - **HTML**, CSS, SCSS, Flask
-    - Git
-    - Still Learning: Go, Rust, Java, *JavaScript(I Hate it !)*
+    <ul>
+        <li><b>Python</b>, C</li>
+        <li><b>SQLite</b>, MySQL, Postgres</li>
+        <li><b>HTML</b>, CSS, SCSS, Flask</li>
+        <li>Git</li>
+        <li>Still Learning: Go, Rust, Java, <i>JavaScript (I Hate it !)</i></li>
+    </ul>
 </details>
 
 ---
