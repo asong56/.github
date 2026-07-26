@@ -2,13 +2,13 @@
 
 # ── 404 // CONTEXT NOT FOUND ──
 
-`ANSEL S.` : `[SYSTEM_STATUS: INACTIVE]`
+`asong56` : `[SYSTEM_STATUS: INACTIVE]`
 
 *Current: Feeling less and less like myself*
 
 ---
 
-<img src="https://github-readme-stats.vercel.app/api?username=asong56&show_icons=true&hide_border=true&hide_title=true&icon_color=F7E7CE&text_color=E6E6FA&bg_color=00000000&count_private=true&rank_icon=percentile&hide_rank=true" alt="Ansel's Github Stats">
+<img src="https://github-readme-stats.vercel.app/api?username=asong56&show_icons=true&hide_border=true&hide_title=true&icon_color=F7E7CE&text_color=E6E6FA&bg_color=00000000&count_private=true&rank_icon=percentile&hide_rank=true" alt="Github Stats">
 
 <details>
 <summary>TECH STACK</summary>
@@ -38,3 +38,23 @@
 > Don't box me into a README
 
 </div>
+
+Current Focus:
+- [Rudoc: A smaller tool for simple convertion workflow](https://github.com/asong56/rudoc)
+- [OhPDF: A PDF tool that lives on your computer.](https://github.com/asong56/ohpdf)
+- [acdn: Core styles, assets, and templates for the my own design system.](https://github.com/asong56/acdn)
+- [DewsLetter: ](https://github.com/asong56/dewsletter)
+- [Captain: A Chromium extension that is updated based on 12 other open source extensions. (Self-used)](https://github.com/asong56/captain)
+
+<details>
+<summary>Other Projects</summary>
+    <ul>
+        <li>[Planned] Ganglion</li>
+        <li>[Planned] Cicada</li>
+        <li>[Paused] Hush</li>
+        <li>[Paused] Diatom</li>
+        <li>[Paused] TardiTalk</li>
+        <li>[Paused] asnap</li>
+        <li>[Paused] Ancora</li>
+    </ul>
+</details>
