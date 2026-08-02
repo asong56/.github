@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   lock:
+    if: github.event.repository.name != '.github'
     runs-on: ubuntu-latest
     steps:
       - uses: dessant/lock-threads@v5
