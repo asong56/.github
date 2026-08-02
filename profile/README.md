@@ -51,10 +51,8 @@ Current Focus:
     <ul>
         <li>[Planned] Ganglion</li>
         <li>[Planned] Cicada</li>
-        <li>[Paused] Hush</li>
         <li>[Paused] Diatom</li>
         <li>[Paused] TardiTalk</li>
-        <li>[Paused] asnap</li>
         <li>[Paused] Ancora</li>
     </ul>
 </details>
