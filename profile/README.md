@@ -42,17 +42,15 @@
 Current Focus:
 - [Rudoc: A smaller tool for simple convertion workflow](https://github.com/asong56/rudoc)
 - [OhPDF: A PDF tool that lives on your computer.](https://github.com/asong56/ohpdf)
-- [acdn: Core styles, assets, and templates for the my own design system.](https://github.com/asong56/acdn)
 - [DewsLetter: An RSS Operating System designed for inbox reading](https://github.com/asong56/dewsletter)
-- [Captain: A Chromium extension that is updated based on 12 other open source extensions. (Self-used)](https://github.com/asong56/captain)
+- [Onas: Image conversion, audio transcoding, and video transcoding CLI](https://github.com/asong56/onas)
 
 <details>
 <summary>Other Projects</summary>
     <ul>
         <li>[Planned] Ganglion</li>
-        <li>[Planned] Cicada</li>
         <li>[Paused] Diatom</li>
         <li>[Paused] TardiTalk</li>
-        <li>[Paused] Ancora</li>
+        <li>[Paused] Captain</li>
     </ul>
 </details>
