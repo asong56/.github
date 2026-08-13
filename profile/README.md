@@ -43,12 +43,11 @@ Current Focus:
 - [Rudoc: A smaller tool for simple convertion workflow](https://github.com/asong56/rudoc)
 - [OhPDF: A PDF tool that lives on your computer.](https://github.com/asong56/ohpdf)
 - [DewsLetter: An RSS Operating System designed for inbox reading](https://github.com/asong56/dewsletter)
-- [Onas: Image conversion, audio transcoding CLI](https://github.com/asong56/onas)
 
 <details>
 <summary>Other Projects</summary>
     <ul>
-        <li>[Planned] Ganglion</li>
+        <li>[Paused] Onas</li>
         <li>[Paused] Diatom</li>
         <li>[Paused] TardiTalk</li>
         <li>[Paused] Captain</li>
